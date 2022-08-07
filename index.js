@@ -1,7 +1,7 @@
 var allMarkers = [];
 var allPopups = [];
-const _map_info = document.querySelector(".map-info")
-console.log('Index Js Connected ');
+const _map_info = document.querySelector(".map-info");
+const _myCordinates = document.querySelector(".myLocation");
 
 
 
@@ -61,6 +61,14 @@ const appened = (message)=>{
   messageElement.innerHTML=_message
   _map_info.append(messageElement); 
 }
+// THIS WILL ADD MESSAAGE IN THE DOM CONTIANER
+const _myLocation = ()=>{
+  const _message=`hi`;
+  // const messageElement=document.createElement('div') // <div></div>
+  // messageElement.classList.add('info_items');
+  // messageElement.innerHTML=_message
+  _myCordinates.innerHTML("hi"); 
+}
 //This will get Current Location
 function getMyLocation() {
   if (navigator.geolocation) {
@@ -75,6 +83,8 @@ function getMyLocation() {
   //   __longitude
   // }
 }
+
+
 
 //This will Show Your Current Location
 function showMyPosition(position) {
@@ -105,8 +115,8 @@ function displayUetKSK() {
 
 
 function buildRoute(_value) {
-  console.log(`\\uet_routes\\route${_value}.json`);
-  fetch(`\\uet_routes\\route${_value}.json`)
+  console.log(`.\\uet_routes\\route${_value}.json`);
+  fetch(`.\\uet_routes\\route${_value}.json`)
     .then(response => response.json())
     .then(rsp => {
       _addStart(rsp.path);
@@ -326,14 +336,11 @@ function _addPath(_path) {
 }
 
 function _addMarkers(rsp){
-  console.log(rsp.route)
   count = 0;
   rsp.route.forEach(element => {
-      console.log(element);
       count++;
       latitude = element.latitude
       longitude = element.longitude;
-      console.log(latitude + " " + longitude);
       const popup = new mapboxgl.Popup({ offset: 25 }).setText(`${count} : ${element.name}`);
       // create DOM element for the marker
       const el = document.createElement('div');
