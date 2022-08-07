@@ -1,6 +1,7 @@
 var allMarkers = [];
 var allPopups = [];
 const _map_info = document.querySelector(".map-info")
+console.log('Index Js Connected ');
 
 
 
