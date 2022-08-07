@@ -1,0 +1,72 @@
+{
+    "route": [
+        {
+            "name": "Allah Ho Chowk",
+            "latitude": "31.469362247197925",
+            "longitude": "74.29826410804245",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Shadwial Chowk",
+            "latitude": "31.456126079561884",
+            "longitude": "74.27715300289734",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Khokar Chowk",
+            "latitude": "31.46974489737639",
+            "longitude": "74.27274893433577",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Samasani Chowk",
+            "latitude": "31.462488313105933",
+            "longitude": "74.27520318851812",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "ExpoCenter",
+            "latitude": "31.459343310005686",
+            "longitude": "74.26670679875369",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Thokar Niaz Baig",
+            "latitude": "31.47145681553802",
+            "longitude": "74.24220262102595",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Taj Company",
+            "latitude": "31.572594745753864",
+            "longitude": "74.28521172611522",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Mian Munshi Hopital",
+            "latitude": "31.57616409109085",
+            "longitude": "74.2870583584863",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Mali Pura",
+            "latitude": "31.587646822627008",
+            "longitude": "74.29254146811121",
+            "visibility": "show"
+            
+        }
+
+        
+    ],
+    "path":[
+       [74.29254146811121,31.587646822627008]
+    ]    
+}

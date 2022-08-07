@@ -1,0 +1,72 @@
+{
+    "route": [
+        {
+            "name": "Bhutta-Chowk",
+            "latitude": "31.487235091119032",
+            "longitude": "74.41176268776877",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Paragon-City-1",
+            "latitude": "31.526291745564677",
+            "longitude": "74.44627131046917",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Paragon-City-2",
+            "latitude": "31.530009186900365",
+            "longitude": "74.45551578601128",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Yaadgar-e-Shuhada ",
+            "latitude": "31.592720264487458",
+            "longitude": "74.46030816660166",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "QUAID E AZAM INTERCHANGE",
+            "latitude": "31.590113849421712",
+            "longitude": "74.43454444272558",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "",
+            "latitude": "",
+            "longitude": "",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Darogy Wala",
+            "latitude": "31.586911549567986",
+            "longitude": "74.40437229347556",
+            "visibility": "show"
+            
+        },
+        
+        {
+            "name": "Shalimar Chowk",
+            "latitude": "31.583679558586738",
+            "longitude": "74.38004929700573",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "SinghPura",
+            "latitude": "31.583491436571162",
+            "longitude": "74.36847035926235",
+            "visibility": "show"
+            
+        }
+        
+    ],
+    "path":[
+       [74.36847035926235,31.583491436571162]
+    ]    
+}

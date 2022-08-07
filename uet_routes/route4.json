@@ -1,0 +1,74 @@
+{
+    "route": [
+        {
+            "name": "Muslim Town Mor",
+            "latitude": "31.520228544161288",
+            "longitude": "74.3259430533748",
+            "visibility": "show"
+        },
+        {
+            "name": "Naqsha Stop",
+            "latitude": "31.517199385129338",
+            "longitude": "74.31636699714869",
+            "visibility": "show"
+        },
+        {
+            "name": "Bhekewal Morr",
+            "latitude": "31.509954615097946",
+            "longitude": "74.30145982248149",
+            "visibility": "show"
+        },
+        {
+            "name": "R-Block",
+            "latitude": "31.504625411544684 ",
+            "longitude": "74.289782959654",
+            "visibility": "None"
+        },
+        {
+            "name": "Raza-Block",
+            "latitude": "31.502245092081075 ",
+            "longitude": "74.28253033000895",
+            "visibility": "show"
+        },
+        {
+            "name": "Careem-Block-RoundAbout",
+            "latitude": "31.508213714588152 ",
+            "longitude": "74.27946541116802",
+            "visibility": "show"
+        },
+        {
+            "name": "Kharak Stop",
+            "latitude": "31.510569038955598",
+            "longitude": "74.27291788150099",
+            "visibility": "show"
+        },
+        {
+            "name": "Liaqat Chowk",
+            "latitude": "31.520993587758113",
+            "longitude": "74.27009522885781",
+            "visibility": "show"
+        },
+        {
+            "name": "Babu Sahbu Bus Stop",
+            "latitude": "31.538335683936026 ",
+            "longitude": "74.2669177886216",
+            "visibility": "show"
+        },
+        {
+            "name": "Motrway",
+            "latitude": "31.543211467268822",
+            "longitude": "74.25908975014205",
+            "visibility": "show"
+        },
+        {
+            "name": "Uet-Ksk",
+            "latitude": "31.692548939047104",
+            "longitude": "74.25177581010863",
+            "visibility": "show"
+        }
+        
+    ],
+    "path":[
+        [74.43504031275707,31.572859561839874]
+    ]    
+}

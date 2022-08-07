@@ -1,0 +1,101 @@
+{
+    "route": [
+            {
+                "name": "Qainchi",
+                "latitude": "31.46399057144011",
+                "longitude": "74.34861657311502",
+                "visibility": "show"
+            },
+            {
+                "name": "Pacakges Gate 3",
+                "latitude": "31.472189828898024",
+                "longitude": "74.35277936151842",
+                "visibility": "show"
+            },
+            {
+                "name": "Walton Stop",
+                "latitude": "31.48447027594423",
+                "longitude": "74.36448367119226",
+                "visibility": "show"
+            },
+            {
+                "name": "Koray Bus Stop",
+                "latitude": "31.493036031655855",
+                "longitude": "74.37213728654025",
+                "visibility": "show"
+            },
+            {
+                "name": "Ghora Chonk",
+                "latitude": "31.501195155377875",
+                "longitude": "74.37788109685242",
+                "visibility": "show"
+            },
+            {
+                "name": "Calvary Ground",
+                "latitude": "31.501534600870478",
+                "longitude": "74.36752006311032",
+                "visibility": "show"
+            },
+            {
+                "name": "Fardoos Market",
+                "latitude": "31.52046043012192",
+                "longitude": "74.35880275832832",
+                "visibility": "show"
+            },
+            {
+                "name": "",
+                "latitude": "",
+                "longitude": "",
+                "visibility": "show"
+            },
+            {
+                "name": "Siddiq Trade Center",
+                "latitude": "31.531955989955932",
+                "longitude": "74.35247771862201",
+                "visibility": "show"
+            },
+            {
+                "name": "Pubjab Cardiology",
+                "latitude": "31.538415469883255",
+                "longitude": "74.336272830691",
+                "visibility": "show"
+            },{
+                "name": "Shadman Chowk",
+                "latitude": "31.54267563086698",
+                "longitude": "74.32778317121803",
+                "visibility": "show"
+            },{
+                "name": "Mozang Chungi",
+                "latitude": "31.54879305123307",
+                "longitude": "74.31486935413815",
+                "visibility": "show"
+            },{
+                "name": "Chouburji",
+                "latitude": "31.554068447289367",
+                "longitude": "74.3048700788411",
+                "visibility": "show"
+            },
+            {
+                "name": "Zilah Katchery",
+                "latitude": "31.57289589722401",
+                "longitude": "74.3058274419158",
+                "visibility": "show"
+            },
+            {
+                "name": "Peer Makki Darbar",
+                "latitude": "31.582612876061898",
+                "longitude": "74.30641152150646",
+                "visibility": "show"
+            },
+            {
+                "name": "Entrance-Gate",
+                "latitude": "31.6925664797247",
+                "longitude": "74.25186792397604",
+                "visibility": "none"
+            }
+
+    ],
+    "path":[
+       [74.25186792397604,31.6925664797247]
+    ]    
+}

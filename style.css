@@ -1,0 +1,75 @@
+:root {
+    --black: #292929;
+    --black_transparancy: #292929bb;
+    --grey: #616161;
+    --white: #ffffff;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--grey);
+}
+.map_container{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+}
+#map{
+    height: 95%;
+    width: 70%;
+    border-radius: 10px;
+    margin: auto;
+}
+#btn{
+    position: relative;
+    z-index: 10;
+}
+/* popup content   */
+.mapboxgl-popup {
+    max-width: 200px;
+
+}
+.mapboxgl-popup-content{
+    background-color: gray;
+    border-radius: 15px;
+    color: white;
+    font-size: larger;
+}
+.mapboxgl-popup-tip{
+    
+}
+.mapboxgl-popup-close-button{
+    padding: 5px;
+} 
+
+
+.map-info{
+    background-color: var(--black_transparancy);
+    color: var(--white);
+    border-radius: 10px;
+    width: 25%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* flex-wrap: wrap; */
+}
+.info_items{
+    padding: 15px;
+}
+
+
+
+.map_buttons{
+    background-color: brown;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+.map_buttons select{
+    background-color: colo;
+}
