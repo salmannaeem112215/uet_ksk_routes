@@ -1,3 +1,4 @@
+console.log('Index Js Connected ')
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FsbWFuMTEyMjE1IiwiYSI6ImNsNWtvNHJ3ZjBjMXEzY21waXkyaWx0cXcifQ.wlb1Y-25-WYT9ecU9EOmRQ';
   var map = new mapboxgl.Map({
     container: 'map',
