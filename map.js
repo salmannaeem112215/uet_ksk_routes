@@ -1,4 +1,3 @@
-console.log('Map Js Connected ')
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FsbWFuMTEyMjE1IiwiYSI6ImNsNWtvNHJ3ZjBjMXEzY21waXkyaWx0cXcifQ.wlb1Y-25-WYT9ecU9EOmRQ';
   var map = new mapboxgl.Map({
     container: 'map',
@@ -12,7 +11,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FsbWFuMTEyMjE1IiwiYSI6ImNsNWtvNHJ3ZjBjMXEzY
 map.addControl(
     new mapboxgl.GeolocateControl({
     positionOptions: {
-    enableHighAccuracy: true
+    enableHighAccuracy: true,
     },
     // When active the map will receive updates to the device's location as it changes.
     trackUserLocation: true,

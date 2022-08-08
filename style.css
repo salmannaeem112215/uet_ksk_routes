@@ -1,75 +1,169 @@
 :root {
-    --black: #292929;
-    --black_transparancy: #292929bb;
-    --grey: #616161;
-    --white: #ffffff;
-  }
+  --black: #292929;
+  --black_transparancy: #292929bb;
+  --grey: #616161;
+  --white: #ffffff;
+}
+body {
+  background-color: var(--black);
+}
+#marker {
+  background-image: url("https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-*{
-    margin: 0px;
-    padding: 0px;
+.mapboxgl-popup-content {
+  background-color: gray;
+  border-radius: 15px;
+  color: white;
+  font-size: larger;
 }
-body{
-    background-color: var(--grey);
+.mapboxgl-popup-close-button {
+  padding: 5px;
 }
-.map_container{
-    display: flex;
-    width: 100vw;
-    height: 70vh;
-}
-#map{
-    height: 95%;
-    width: 70%;
-    border-radius: 10px;
-    margin: auto;
-}
-#btn{
-    position: relative;
-    z-index: 10;
+#btn {
+  position: relative;
+  z-index: 10;
 }
 /* popup content   */
 .mapboxgl-popup {
-    max-width: 200px;
-
-}
-.mapboxgl-popup-content{
-    background-color: gray;
-    border-radius: 15px;
-    color: white;
-    font-size: larger;
-}
-.mapboxgl-popup-tip{
-    
-}
-.mapboxgl-popup-close-button{
-    padding: 5px;
-} 
-
-
-.map-info{
-    background-color: var(--black_transparancy);
-    color: var(--white);
-    border-radius: 10px;
-    width: 25%;
-    height: 95%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    /* flex-wrap: wrap; */
-}
-.info_items{
-    padding: 15px;
+  max-width: 200px;
 }
 
-
-
-.map_buttons{
-    background-color: brown;
-    margin: 5px;
-    margin-bottom: 0px;
-    padding: 5px;
+/* Styling starts from here  */
+.map_buttons {
+  /* display: flex; */
+  flex-direction: row;
+  background-color: var(--black_transparancy);
+  padding: 5px;
+  /* margin: 5px; */
 }
-.map_buttons select{
-    background-color: colo;
+.map_buttons select {
+  background-color: var(--grey);
+  /* margin: 0px 5px; */
+  padding: 5px 1px;
+  color: var(--white);
+  border-radius: 12px;
+  border: 1px solid black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 15px;
+}
+.map_buttons select option {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 15px;
+}
+.map_buttons select option:hover {
+  background-color: var(--black);
+  color: var(--black);
+}
+.map_buttons select option:active {
+  background-color: var(--black);
+  color: var(--black);
+}
+
+.map_container {
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  height: 90vh;
+  margin: 0px;
+}
+#map {
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.map-info {
+  margin-top: 10px;
+  background-color: var(--black_transparancy);
+  color: var(--white);
+  border-radius: 10px;
+  width: 100%;
+  /* height: 30%; */
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.info_items {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+  width: 400px;
+  background-color: var(--grey);
+}
+.info_items:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.info_items h3 {
+  padding: 5px;
+  width: 100%;
+}
+
+/* Scroll Barr Setting      */
+.map-info::-webkit-scrollbar {
+  height: 20px;
+}
+.map-info::-webkit-scrollbar-thumb,
+.map-info::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+.map-info::-webkit-scrollbar-thumb {
+  background: var(--white);
+}
+.map-info::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+.youngstr {
+  background-color: black;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+#logo-text {
+  color: #ffffff;
+  font-family: "Patrick Hand", cursive;
+  font-size: large;
+}
+
+.map_buttons select {
+  font-weight: 1000;
+  font-size: 15px;
+}
+.map_buttons select option {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+  .info_items {
+    width: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .info_items {
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .info_items {
+    width: 370px;
+  }
 }

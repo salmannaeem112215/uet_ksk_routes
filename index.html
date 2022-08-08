@@ -1,73 +1,62 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Route-Map</title>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      #marker {
-        background-image: url("https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg");
-        background-size: cover;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    
-    <div class="map_buttons">
-      <button onclick="getMyLocation()">MyLocation</button>
-      <select id="viewRoutes">
-        <option>Select Route</option>
-        <option value="1">Route-01</option>
-        <option value="2">Route-02</option>
-        <option value="3">Route-03</option>
-        <option value="4">Route-04</option>
-        <option value="5">Route-05</option>
-        <option value="6">Route-06</option>
-        <option value="7">Route-07</option>
-        <option value="8">Route-08</option>
-        <option value="9">Route-09</option>
-        <option value="10">Route-10</option>
-        <option value="11">Route-11</option>
-        <option value="11">Route-12</option>
-        <option value="11">Route-13</option>
-        <option value="11">Route-14</option>
-        <option value="11">Route-15</option>
-      </select>
-      <select id="viewLocationsMain">
-        <option>Select Location</option>
-        <option value="1">Uet Main</option>
-        <option value="2">Uet Ksk</option>
-      </select>
-      <select id="drawPolyline">
-        <option>Draw-Line</option>
-        <option value="1">Main-Ksk</option>
-        <option value="2">Ksk</option>
-        <option value="2">Ksk</option>
-      </select>
-      <!-- <div class="myLocation">
-        <h1 class="values">88979879879</h1>
-        <h1 class="values">88979879879</h1>
-      </div> -->
-    </div>
 
-    <div class="map_container">
-      <div id="map"></div>
-      <div class="map-info"></div>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Route-Map</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-  <script src="map.js"></script>
-  <script src="index.js"></script>
-  <script></script>
+<body>
+  <div class="map_buttons">
+    <select id="viewRoutes">
+      <option class="options">Select Route</option>
+      <option class="options" value="1" >Route-01</option>
+      <option class="options" value="2" >Route-02</option>
+      <option class="options" value="3">Route-03</option>
+      <option class="options" value="4">Route-04</option>
+      <option class="options" value="5">Route-05</option>
+      <option class="options" value="6">Route-06</option>
+      <option class="options" value="7">Route-07</option>
+      <option class="options" value="8">Route-08</option>
+      <option class="options" value="9">Route-09</option>
+      <option class="options" value="10">Route-10</option>
+      <option class="options" value="11" disabled>Route-11</option>
+      <option class="options" value="12" disabled>Route-12</option>
+      <option class="options" value="13" disabled>Route-13</option>
+      <option class="options" value="14" disabled>Route-14</option>
+      <option class="options" value="15" disabled>Route-15</option>
+    </select>
+    <select id="viewLocationsMain">
+      <option>Select Location</option>
+      <option class="options" value="-1">My Location</option>
+      <option class="options" value="1">Uet Main</option>
+      <option class="options" value="2">Uet Ksk</option>
+    </select>
+    </div> 
+  <div class="map_container">
+    <div id="map"></div>
+    <div class="map-info">
+      <div class="info_items">
+        <h3> Select Route to see it Detail</h3>
+        <h3> Mobile Application is UnderConstruction</h3>
+      </div>
+    </div>
+  </div>
+  <div class="youngstr">
+    <a href="http://youngsters.byethost11.com" class="navbar-brand">
+      <p id="logo-text"> Youngstr | Project by 84</p>
+    </a>
+  </div>
+  </div>
+</body>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+<script src="map.js"></script>
+<script src="index.js"></script>
+<script></script>
+
 </html>

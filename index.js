@@ -6,7 +6,23 @@ const _myCordinates = document.querySelector(".myLocation");
 
 
 // Event Listners
+$("#viewMarkers").change(function () {
+  if ($(this).val() == -1) {
+    getMyLocation();
+  }
+  if ($(this).val() == 1) {
+    displayUetMain()
+  }
+  if ($(this).val() == 2) {
+    displayUetKSK()
+  }
+  
+});
+// Event Listners
 $("#viewLocationsMain").change(function () {
+  if ($(this).val() == -1) {
+    getMyLocation();
+  }
   if ($(this).val() == 1) {
     displayUetMain()
   }
@@ -50,12 +66,12 @@ const cleanInfoBox = ()=>{
 const appened = (message)=>{
   const _message=`
   <h3 class="item_name">
-  Location: ${message.name}
+  Location : ${message.name}
   </h3>
-  <hr>
-  <h3 class="item_Time">
-  Time : ${message.time}
-  </h3>`;
+  <h3 class="item_time">
+  Time     : ${message.time}
+  </h3>
+  `;
   const messageElement=document.createElement('div') // <div></div>
   messageElement.classList.add('info_items');
   messageElement.innerHTML=_message
@@ -76,12 +92,12 @@ function getMyLocation() {
   } else {
     console.log("Geolocation is not supported by this browser.");
   }
-  // let __latitude = position.coords.latitude;
-  // let __longitude = position.coords.longitude;
-  // return {
-  //   __latitude,
-  //   __longitude
-  // }
+  let __latitude = position.coords.latitude;
+  let __longitude = position.coords.longitude;
+  return {
+    __latitude,
+    __longitude
+  }
 }
 
 
@@ -89,7 +105,7 @@ function getMyLocation() {
 //This will Show Your Current Location
 function showMyPosition(position) {
   console.log(position.coords.latitude + "  " + position.coords.longitude);
-  // center[position.coords.longitude,position.coords.latitude];
+  center[position.coords.longitude,position.coords.latitude];
   let long=position.coords.longitude;
   let lat=position.coords.latitude;
   _addMyPoint([long,lat]);
@@ -347,7 +363,7 @@ function _addMarkers(rsp){
       el.id = 'marker';
 
       var oneMarker = new mapboxgl.Marker({ draggable: false, color: `rgb(255,0,0)` }).setLngLat([longitude, latitude]).setPopup(popup).addTo(map);
-
+      // oneMarker.setData()
       appened({"name":`${element.name}`,"time":"NILL"})
       allPopups.push(popup); // will add popup message in list 
       allMarkers.push(oneMarker); // will add popup message in list 
