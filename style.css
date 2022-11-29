@@ -1,7 +1,7 @@
 :root {
-  --black: #292929;
-  --black_transparancy: #292929bb;
-  --grey: #616161;
+  --black: #eeeeee;
+  --black_transparancy: #eeeeeebb;
+  --grey: #0f0e0ee1;
   --white: #ffffff;
 }
 body {
@@ -167,3 +167,13 @@ a {
     width: 370px;
   }
 }
+
+
+
+
+#menu {
+  position: absolute;
+  background: #efefef;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  }
