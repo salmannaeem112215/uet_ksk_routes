@@ -3,40 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
   <title>Route-Map</title>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css" />
+  <link href="bStyle.css" rel="stylesheet" />
+
+
+ 
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Youngstr-KSK</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!-- <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" /> -->
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    
+
 </head>
 
-<body>
-  <div class="map_buttons">
-    <select id="viewRoutes">
-      <option class="options">Select Route</option>
-      <option class="options" value="1" >Route-01</option>
-      <option class="options" value="2" >Route-02</option>
-      <option class="options" value="3">Route-03</option>
-      <option class="options" value="4">Route-04</option>
-      <option class="options" value="5">Route-05</option>
-      <option class="options" value="6">Route-06</option>
-      <option class="options" value="7">Route-07</option>
-      <option class="options" value="8">Route-08</option>
-      <option class="options" value="9">Route-09</option>
-      <option class="options" value="10">Route-10</option>
-      <option class="options" value="11" disabled>Route-11</option>
-      <option class="options" value="12" disabled>Route-12</option>
-      <option class="options" value="13" disabled>Route-13</option>
-      <option class="options" value="14" disabled>Route-14</option>
-      <option class="options" value="15" disabled>Route-15</option>
-    </select>
-    <select id="viewLocationsMain">
-      <option>Select Location</option>
-      <option class="options" value="-1">My Location</option>
-      <option class="options" value="1">Uet Main</option>
-      <option class="options" value="2">Uet Ksk</option>
-    </select>
-    </div> 
+<body id="page-top">
+  <!-- <div class="youngstr">
+    <a href="https://salmannaeem112215.github.io/youngstr_website/" class="navbar-brand">
+      <p id="logo-text"> Youngstr| Project by 84</p>
+    </a>
+  </div> -->
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top"><img style="width:8.5rem"  src="logo.png" alt="" id="logo"></a>
+        <div class="map_buttons">
+          <select id="viewRoutes">
+            <option class="options">Select Route</option>
+            <option class="options" value="1" >Route-01</option>
+            <option class="options" value="2" >Route-02</option>
+            <option class="options" value="3">Route-03</option>
+            <option class="options" value="4">Route-04</option>
+            <option class="options" value="5">Route-05</option>
+            <option class="options" value="6">Route-06</option>
+            <option class="options" value="7">Route-07</option>
+            <option class="options" value="8">Route-08</option>
+            <option class="options" value="9">Route-09</option>
+            <option class="options" value="10">Route-10</option>
+            <option class="options" value="11" disabled>Route-11</option>
+            <option class="options" value="12" disabled>Route-12</option>
+            <option class="options" value="13" disabled>Route-13</option>
+            <option class="options" value="14" disabled>Route-14</option>
+            <option class="options" value="15" disabled>Route-15</option>
+          </select>
+          <select id="markerLocation">
+            <option>Select Bus Stops</option>
+          </select>
+          </div> 
+    </div>
+</nav>
+
   <div class="map_container">
     <div id="map"></div>
     <div class="map-info">
@@ -45,11 +75,6 @@
         <h3> Mobile Application is UnderConstruction</h3>
       </div>
     </div>
-  </div>
-  <div class="youngstr">
-    <a href="http://youngsters.byethost11.com" class="navbar-brand">
-      <p id="logo-text"> Youngstr | Project by 84</p>
-    </a>
   </div>
   </div>
 </body>

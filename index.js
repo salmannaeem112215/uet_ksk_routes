@@ -1,36 +1,10 @@
 var allMarkers = [];
 var allPopups = [];
+var allMarkersLocation = [];  // this will store info of stops cordinates
+var allMarkersButton = [];
 const _map_info = document.querySelector(".map-info");
 const _myCordinates = document.querySelector(".myLocation");
-
-
-
-// Event Listners
-$("#viewMarkers").change(function () {
-  if ($(this).val() == -1) {
-    getMyLocation();
-  }
-  if ($(this).val() == 1) {
-    displayUetMain()
-  }
-  if ($(this).val() == 2) {
-    displayUetKSK()
-  }
-  
-});
-// Event Listners
-$("#viewLocationsMain").change(function () {
-  if ($(this).val() == -1) {
-    getMyLocation();
-  }
-  if ($(this).val() == 1) {
-    displayUetMain()
-  }
-  if ($(this).val() == 2) {
-    displayUetKSK()
-  }
-  
-});
+const _markerLocation = document.querySelector("#markerLocation");
 
 // Event Listners and building Routes , markers and Path
 $("#viewRoutes").change(function () {
@@ -42,12 +16,19 @@ $("#viewRoutes").change(function () {
   let _value = $(this).val();
   if (_value >= 1 || _value <= 8) {
     
-    console.log(_value);
     buildRoute(_value);
-    console.log(`you pressed ${$(this).val()}`);
   }
   else {
     alert("You Have Selected none")
+  }
+});
+
+// Event Listners
+$("#markerLocation").change(function () {
+  let _value = $(this).val();
+  if (_value >= 1 || _value <= 8) {
+    const pos = allMarkersLocation[$(this).val()];
+    displayMarkerPos(pos.longitude, pos.latitude);
   }
 });
 
@@ -58,13 +39,14 @@ $("#viewRoutes").change(function () {
 
 
 
+
 // THIS WILL Remove all the messages
-const cleanInfoBox = ()=>{
-  _map_info.innerHTML=""; 
+const cleanInfoBox = () => {
+  _map_info.innerHTML = "";
 }
 // THIS WILL ADD MESSAAGE IN THE DOM CONTIANER
-const appened = (message)=>{
-  const _message=`
+const appened = (message) => {
+  const _message = `
   <h3 class="item_name">
   Location : ${message.name}
   </h3>
@@ -72,18 +54,18 @@ const appened = (message)=>{
   Time     : ${message.time}
   </h3>
   `;
-  const messageElement=document.createElement('div') // <div></div>
+  const messageElement = document.createElement('div') // <div></div>
   messageElement.classList.add('info_items');
-  messageElement.innerHTML=_message
-  _map_info.append(messageElement); 
+  messageElement.innerHTML = _message
+  _map_info.append(messageElement);
 }
-// THIS WILL ADD MESSAAGE IN THE DOM CONTIANER
-const _myLocation = ()=>{
-  const _message=`hi`;
+//THIS WILL ADD MESSAAGE IN THE DOM CONTIANER
+const _myLocation = () => {
+  const _message = `hi`;
   // const messageElement=document.createElement('div') // <div></div>
   // messageElement.classList.add('info_items');
   // messageElement.innerHTML=_message
-  _myCordinates.innerHTML("hi"); 
+  _myCordinates.innerHTML("hi");
 }
 //This will get Current Location
 function getMyLocation() {
@@ -105,19 +87,19 @@ function getMyLocation() {
 //This will Show Your Current Location
 function showMyPosition(position) {
   console.log(position.coords.latitude + "  " + position.coords.longitude);
-  center[position.coords.longitude,position.coords.latitude];
-  let long=position.coords.longitude;
-  let lat=position.coords.latitude;
-  _addMyPoint([long,lat]);
+  center[position.coords.longitude, position.coords.latitude];
+  let long = position.coords.longitude;
+  let lat = position.coords.latitude;
+  _addMyPoint([long, lat]);
   map.jumpTo({
-    center:[position.coords.longitude,position.coords.latitude],
+    center: [position.coords.longitude, position.coords.latitude],
     zoom: 14,
   });
 }
 
-function displayUetMain() {
+function displayMarkerPos(long, lat) {
   map.jumpTo({
-    center: [74.35586768587441,31.578964675606525],
+    center: [long, lat],
     zoom: 14,
   });
 }
@@ -131,7 +113,6 @@ function displayUetKSK() {
 
 
 function buildRoute(_value) {
-  console.log(`.\\uet_routes\\route${_value}.json`);
   fetch(`.\\uet_routes\\route${_value}.json`)
     .then(response => response.json())
     .then(rsp => {
@@ -139,7 +120,8 @@ function buildRoute(_value) {
       _addEnd(rsp.path);
       _addPath(rsp.path);
       _addMarkers(rsp);
-      
+      _addButtons(rsp.route);
+
     })
 }
 
@@ -149,7 +131,6 @@ function removeMarkers() {
       allMarkers[i].remove();
       delete allMarkers[i];
       allMarkers.pop();
-      console.log("Markers-Removed");
     }
   }
 }
@@ -159,14 +140,13 @@ function removePopups() {
       allPopups[i].remove();
       delete allPopups[i];
       allPopups.pop();
-      console.log("Pop-Removed");
     }
   }
 }
 
 
 
-function _addMyPoint(cord){
+function _addMyPoint(cord) {
   const myPoint = {
     type: 'FeatureCollection',
     features: [
@@ -175,7 +155,7 @@ function _addMyPoint(cord){
         properties: {},
         geometry: {
           type: 'Point',
-          coordinates: [cord[0],cord[1]]
+          coordinates: [cord[0], cord[1]]
         }
       }
     ]
@@ -197,7 +177,7 @@ function _addMyPoint(cord){
               properties: {},
               geometry: {
                 type: 'Point',
-                coordinates: [cord[0],cord[1]]
+                coordinates: [cord[0], cord[1]]
               }
             }
           ]
@@ -212,9 +192,9 @@ function _addMyPoint(cord){
 
 
 }
-function _addStart(_path){
-  const startLon=_path[0][0];
-  const startLat=_path[0][1];
+function _addStart(_path) {
+  const startLon = _path[0][0];
+  const startLat = _path[0][1];
   const startCircle = {
     type: 'FeatureCollection',
     features: [
@@ -223,7 +203,7 @@ function _addStart(_path){
         properties: {},
         geometry: {
           type: 'Point',
-          coordinates: [startLon,startLat]
+          coordinates: [startLon, startLat]
         }
       }
     ]
@@ -245,7 +225,7 @@ function _addStart(_path){
               properties: {},
               geometry: {
                 type: 'Point',
-                coordinates: [startLon,startLat]
+                coordinates: [startLon, startLat]
               }
             }
           ]
@@ -260,9 +240,9 @@ function _addStart(_path){
 
 
 }
-function _addEnd(_path){
-  const endLon=_path[_path.length-1][0];
-  const endLat=_path[_path.length-1][1];
+function _addEnd(_path) {
+  const endLon = _path[_path.length - 1][0];
+  const endLat = _path[_path.length - 1][1];
   //For End Circles
   const endCircle = {
     type: 'FeatureCollection',
@@ -272,7 +252,7 @@ function _addEnd(_path){
         properties: {},
         geometry: {
           type: 'Point',
-          coordinates: [endLon,endLat]
+          coordinates: [endLon, endLat]
         }
       }
     ]
@@ -293,7 +273,7 @@ function _addEnd(_path){
               properties: {},
               geometry: {
                 type: 'Point',
-                coordinates: [endLon,endLat]
+                coordinates: [endLon, endLat]
               }
             }
           ]
@@ -319,10 +299,10 @@ function _addPath(_path) {
     }
   }
 
-  if (map.getSource("route")){
+  if (map.getSource("route")) {
     map.getSource('route').setData(route)
   }
-  else{
+  else {
     map.addSource('route', {
       'type': 'geojson',
       'data': {
@@ -335,37 +315,55 @@ function _addPath(_path) {
         }
       }
     });
-  map.addLayer({
-    'id': 'route',
-    'type': 'line',
-    'source': 'route',
-    'layout': {
-      'line-join': 'round',
-      'line-cap': 'round'
-    },
-    'paint': {
-      'line-color': '#888',
-      'line-width': 8
-    }
-  });
+    map.addLayer({
+      'id': 'route',
+      'type': 'line',
+      'source': 'route',
+      'layout': {
+        'line-join': 'round',
+        'line-cap': 'round'
+      },
+      'paint': {
+        'line-color': '#888',
+        'line-width': 8
+      }
+    });
   }
 }
 
-function _addMarkers(rsp){
+function _addMarkers(rsp) {
   count = 0;
   rsp.route.forEach(element => {
-      count++;
-      latitude = element.latitude
-      longitude = element.longitude;
-      const popup = new mapboxgl.Popup({ offset: 25 }).setText(`${count} : ${element.name}`);
-      // create DOM element for the marker
-      const el = document.createElement('div');
-      el.id = 'marker';
+    count++;
+    latitude = element.latitude
+    longitude = element.longitude;
+    const popup = new mapboxgl.Popup({ offset: 25 }).setText(`${count} : ${element.name}`);
+    // create DOM element for the marker
+    const el = document.createElement('div');
+    el.id = 'marker';
 
-      var oneMarker = new mapboxgl.Marker({ draggable: false, color: `rgb(255,0,0)` }).setLngLat([longitude, latitude]).setPopup(popup).addTo(map);
-      // oneMarker.setData()
-      appened({"name":`${element.name}`,"time":"NILL"})
-      allPopups.push(popup); // will add popup message in list 
-      allMarkers.push(oneMarker); // will add popup message in list 
-    });
+    var oneMarker = new mapboxgl.Marker({ draggable: false, color: `rgb(255,0,0)` }).setLngLat([longitude, latitude]).setPopup(popup).addTo(map);
+    // oneMarker.setData()
+    appened({ "name": `${element.name}`, "time": "NILL" })
+    allPopups.push(popup); // will add popup message in list 
+    allMarkers.push(oneMarker); // will add popup message in list 
+  });
 }
+
+
+function _addButtons(pos) {
+  _markerLocation.innerHTML = '<option>Select Bus Stops</option>';
+  allMarkersLocation = [];
+  var count = 0;
+  pos.forEach(element => {
+    allMarkersLocation.push(element);
+    const messageElement = document.createElement('option')
+    messageElement.classList.add('options');
+    messageElement.value = count++;
+    messageElement.innerHTML = element.name;
+    _markerLocation.append(messageElement);
+  });
+}
+
+
+// console.log(@);
