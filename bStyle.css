@@ -477,3 +477,18 @@
   .navbar-dark .navbar-text a:focus {
     color: #fff;
   }
+
+
+
+
+
+
+
+  
+.footer {
+  padding: 5rem 0;
+}
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}

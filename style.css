@@ -1,6 +1,6 @@
 :root {
-  --black: #bebebe;
-  --black_transparancy: #c2c0c04f;
+  --black: #4d4d4d;
+  --black_transparancy: #c2c0c000;
   --grey: #0f0e0ee1;
   --white: #ffffff;
 }
@@ -40,7 +40,12 @@ body {
   flex-direction: row;
   background-color: var(--black_transparancy);
   padding: 5px;
+  
   /* margin: 5px; */
+}
+.styleButtons{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .map_buttons select {
   background-color: var(--grey);
@@ -57,14 +62,17 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   font-size: 15px;
+  
 }
 .map_buttons select option:hover {
   background-color: var(--black);
   color: var(--black);
+
 }
 .map_buttons select option:active {
   background-color: var(--black);
   color: var(--black);
+  
 }
 
 .map_container {
@@ -78,6 +86,8 @@ body {
   height: 70%;
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .map-info {
@@ -85,8 +95,10 @@ body {
   background-color: var(--black_transparancy);
   color: var(--white);
   border-radius: 10px;
-  width: 100%;
+  /* width: 100%; */
   /* height: 30%; */
+  padding-top: 20px;
+  padding-left: 10px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
@@ -101,6 +113,7 @@ body {
   flex-shrink: 0;
   width: 400px;
   background-color: var(--grey);
+
 }
 .info_items:hover {
   background-color: var(--white);

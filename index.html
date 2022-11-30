@@ -40,9 +40,8 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
     <div class="container px-4 px-lg-5 " >
-        <a class="navbar-brand" href="https://salmannaeem112215.github.io/youngstr_website/"><img  src="mLogo.png" alt="" id="logo"></a>
         <div class="map_buttons">
-          <select id="viewRoutes">
+          <select id="viewRoutes" class="styleButtons">
             <option class="options">Selct Route</option>
             <option class="options" value="1" >Route-01</option>
             <option class="options" value="2" >Route-02</option>
@@ -60,14 +59,14 @@
             <option class="options" value="14" disabled>Route-14</option>
             <option class="options" value="15" disabled>Route-15</option>
           </select>
-          <select id="markerLocation">
+          <select  id="markerLocation" class="styleButtons">
             <option>Select Stops</option>
           </select>
           </div> 
     </div>
 </nav>
 
-  <div class="map_container">
+  <div class="map_container shadow p-3 mb-5 bg-white rounded">
     <div id="map"></div>
     <!-- <div id="menu">
       <label for="dark-v11">dark</label>
@@ -83,14 +82,16 @@
 
 
       </div> -->
-    <div class="map-info">
-      <div class="info_items">
+    <div class="map-info styleButtons">
+      <div class="info_items styleButtons" style="margin: auto; text-align: center">
         <h3> Select route to see its path</h3>
         <h3> Mobile Application is UnderConstruction</h3>
       </div>
     </div>
   </div>
   </div>
+  <!-- <a class="navbar-brand" href="https://salmannaeem112215.github.io/youngstr_website/"><img  src="mLogo.png" alt="" id="logo"></a> -->
+
 </body>
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
