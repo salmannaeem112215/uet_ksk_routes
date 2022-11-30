@@ -168,7 +168,25 @@ a {
   }
 }
 
+#logo{
+  height: 80;
+}
 
+@media (max-width: 500px) {
+  #logo{
+    height: 80;
+  }
+}
+@media (max-width: 450px) {
+  #logo{
+    height: 50;
+  }
+}
+@media (max-width: 400px) {
+  #logo{
+    height: 33;
+  }
+}
 
 
 #menu {
