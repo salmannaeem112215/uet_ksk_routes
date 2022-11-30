@@ -1,7 +1,9 @@
 {
     "route": [
+
         {
             "name": "Chan Da Qila",
+            "time":"6:50",
             "latitude": "32.09382889817441",
             "longitude": "74.200948902104",
             "visibility": "show"
@@ -9,6 +11,7 @@
         },
         {
             "name": "Kamoke",
+            "time":"7:05",
             "latitude": "31.974960644181216",
             "longitude": "74.22246819125286",
             "visibility": "show"
@@ -16,6 +19,7 @@
         },
         {
             "name": "Sadhoke",
+            "time":"",
             "latitude": "31.90733814088904",
             "longitude": "74.23502963158481",
             "visibility": "show"
@@ -23,6 +27,7 @@
         },
         {
             "name": "Muridkey",
+            "time":"7:30",
             "latitude": "31.809418893506734",
             "longitude": "74.25335500998419",
             "visibility": "show"
@@ -30,6 +35,7 @@
         },
         {
             "name": "SA-Gardens",
+            "time":"",
             "latitude": "31.7298737974467",
             "longitude": "74.26688444114697",
             "visibility": "show"
@@ -37,6 +43,7 @@
         },
         {
             "name": "Uet-Sign Board",
+            "time":"",
             "latitude": "31.7010440456178",
             "longitude": "74.27279074617076",
             "visibility": "show"
@@ -44,6 +51,7 @@
         },
         {
             "name": "Uet-Entrance Gate",
+            "time":"",
             "latitude": "31.692569055106713",
             "longitude": "74.25176871229257",
             "visibility": "show"

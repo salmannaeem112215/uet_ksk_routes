@@ -1,55 +1,64 @@
 {
 "route": [
     {
-        "name": "FlatStop",
+        "name": "FlatStop-Dubai Chowk",
+            "time":"6:50",
         "latitude": "31.52216955",
         "longitude": "74.2900213539697",
         "visibility": "show"
     },
     {
         "name": "SchemeMor",
+            "time":"",
         "latitude": "31.5256321313014",
         "longitude": "74.283513924571",
         "visibility": "show"
     },
     {
         "name": "YateemKhana",
+            "time":"",
         "latitude": "31.5318012919101",
         "longitude": "74.2871592988923",
         "visibility": "show"
     },
     {
         "name": "MorSamanabd",
+            "time":"",
         "latitude": "31.5442919594296",
         "longitude": "74.2942740785152",
         "visibility": "show"
     },
     {
         "name": "GhulShanRavi-1",
+            "time":"",
         "latitude": "31.5488012627919",
         "longitude": "74.2892250052816",
         "visibility": "show"
     },
     {
         "name": "BrightStart-Academy",
+            "time":"",
         "latitude": "31.550013994302788",
         "longitude": "74.2818935277932",
         "visibility": "show"
     },
     {
         "name": "BandRoad",
+            "time":"",
         "latitude": "31.55129323088132",
         "longitude": "74.27062256684762",
         "visibility": "none"
     },
     {
         "name": "Sandah-TollPlaza",
+            "time":"",
         "latitude": "31.555229129460216",
         "longitude": "74.27407725207775",
         "visibility": "none"
     },
     {
         "name": "Sandah",
+            "time":"",
         "latitude": "31.559945453433954",
         "longitude": "74.27779630123062",
         "visibility": "none"

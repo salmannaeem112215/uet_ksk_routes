@@ -2,6 +2,7 @@
     "route": [
         {
             "name": "SinghPura",
+            "time":"",
             "latitude": "31.583491436571162",
             "longitude": "74.36847035926235",
             "visibility": "show"
@@ -9,6 +10,7 @@
         },
         {
             "name": "Shalimar Chowk",
+            "time":"",
             "latitude": "31.583679558586738",
             "longitude": "74.38004929700573",
             "visibility": "show"
@@ -16,6 +18,7 @@
         },
         {
             "name": "Bismillah Housing Society",
+            "time":"",
             "latitude": "31.595061458856645",
             "longitude": "74.48096412428502",
             "visibility": "show"
@@ -23,6 +26,7 @@
         },
         {
             "name": "Yaadgar-e-Shuhada ",
+            "time":"",
             "latitude": "31.592720264487458",
             "longitude": "74.46030816660166",
             "visibility": "show"
@@ -30,6 +34,7 @@
         },
         {
             "name": "QUAID E AZAM INTERCHANGE",
+            "time":"",
             "latitude": "31.590113849421712",
             "longitude": "74.43454444272558",
             "visibility": "show"
@@ -37,6 +42,7 @@
         },
         {
             "name": "Salmat Pura",
+            "time":"",
             "latitude": "31.587928462289874",
             "longitude": "74.41273634420435",
             "visibility": "show"
@@ -44,6 +50,7 @@
         },
         {
             "name": "Darogy Wala",
+            "time":"",
             "latitude": "31.586911549567986",
             "longitude": "74.40437229347556",
             "visibility": "show"
@@ -51,6 +58,7 @@
         },
         {
             "name": "Basi More",
+            "time":"",
             "latitude": "31.60119629604785",
             "longitude": "74.4011115897849",
             "visibility": "show"
@@ -58,6 +66,7 @@
         },
         {
             "name": "Astran Bypass",
+            "time":"",
             "latitude": "31.609813285955724",
             "longitude": "74.40234122365106",
             "visibility": "show"
@@ -65,6 +74,7 @@
         },
         {
             "name": "Entrance-Gate",
+            "time":"",
             "latitude": "31.6925664797247",
             "longitude": "74.25186792397604",
             "visibility": "none"
@@ -72,6 +82,6 @@
         
     ],
     "path":[
-       [74.25186792397604,31.6925664797247]
+        [74.36847035926235,31.583491436571162]
     ]    
 }

@@ -2,6 +2,7 @@
     "route": [
         {
             "name": "Allah Ho Chowk",
+            "time":"6:30",
             "latitude": "31.469362247197925",
             "longitude": "74.29826410804245",
             "visibility": "show"
@@ -9,6 +10,7 @@
         },
         {
             "name": "Shadwial Chowk",
+            "time":"",
             "latitude": "31.456126079561884",
             "longitude": "74.27715300289734",
             "visibility": "show"
@@ -16,6 +18,7 @@
         },
         {
             "name": "Khokar Chowk",
+            "time":"6:45",
             "latitude": "31.46974489737639",
             "longitude": "74.27274893433577",
             "visibility": "show"
@@ -23,6 +26,7 @@
         },
         {
             "name": "Samasani Chowk",
+            "time":"",
             "latitude": "31.462488313105933",
             "longitude": "74.27520318851812",
             "visibility": "show"
@@ -30,6 +34,7 @@
         },
         {
             "name": "ExpoCenter",
+            "time":"",
             "latitude": "31.459343310005686",
             "longitude": "74.26670679875369",
             "visibility": "show"
@@ -37,33 +42,45 @@
         },
         {
             "name": "Thokar Niaz Baig",
+            "time":"7:00",
             "latitude": "31.47145681553802",
             "longitude": "74.24220262102595",
             "visibility": "show"
             
         },
         {
-            "name": "Taj Company",
-            "latitude": "31.572594745753864",
-            "longitude": "74.28521172611522",
+            "name": "Multan Chungi",
+            "time":"",
+            "latitude": "31.49599999498623",
+            "longitude": "74.26400005849241",
             "visibility": "show"
             
         },
         {
-            "name": "Mian Munshi Hopital",
-            "latitude": "31.57616409109085",
-            "longitude": "74.2870583584863",
+            "name": "Mandi Stop",
+            "time":"",
+            "latitude":"31.499192716691702",
+            "longitude": "74.26564693256738",
             "visibility": "show"
             
         },
         {
-            "name": "Mali Pura",
+            "name": "Awan Town",
+            "time":"7:20",
+            "latitude": "31.50312201590278",
+            "longitude": "74.26782579404444",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Mali Pura - Not Confirm",
+            "time":"",
             "latitude": "31.587646822627008",
             "longitude": "74.29254146811121",
             "visibility": "show"
             
         }
-
+        
         
     ],
     "path":[

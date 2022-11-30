@@ -54,6 +54,7 @@ const appened = (message) => {
   Time     : ${message.time}
   </h3>
   `;
+  console.log(message);
   const messageElement = document.createElement('div') // <div></div>
   messageElement.classList.add('info_items');
   messageElement.innerHTML = _message
@@ -300,7 +301,7 @@ function _addMarkers(rsp) {
 
     var oneMarker = new mapboxgl.Marker({ draggable: false, color: `rgb(255,0,0)` }).setLngLat([longitude, latitude]).setPopup(popup).addTo(map);
     // oneMarker.setData()
-    appened({ "name": `${element.name}`, "time": "NILL" })
+    appened({ "name": `${element.name}`, "time": `${element.time}` })
     allPopups.push(popup); // will add popup message in list 
     allMarkers.push(oneMarker); // will add popup message in list 
   });
