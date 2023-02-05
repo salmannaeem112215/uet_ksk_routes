@@ -1,0 +1,17 @@
+{
+    "route": [
+        {
+            "name": "UET MAIN CAMPUS",
+            "time":"7:00",
+            "latitude": "31.576814040812845",
+            "longitude": "74.35661099185715",
+            "visibility": "show"
+            
+        }
+
+        
+    ],
+    "path":[
+       []
+    ]    
+}

@@ -1,0 +1,104 @@
+{
+    "route": [
+        {
+            "name": "Burj Atari",
+            "time":"6:50",
+            "latitude": "31.571442238883776",
+            "longitude": "74.19597924485699",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Faizpur Interchange",
+            "time":"",
+            "latitude": "31.59482190923196",
+            "longitude": "74.21760094522188",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Pholo Wali Market",
+            "time":"",
+            "latitude": "31.61001947351502",
+            "longitude": "74.25001380252372",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Kot Abdul Malik",
+            "time":"",
+            "latitude": "31.619523168045944",
+            "longitude": "74.24751454901427",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Begum Kot",
+            "time":"",
+            "latitude": "31.613983972944112",
+            "longitude": "74.26559801560326",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Shadrah Chowk",
+            "time":"",
+            "latitude": "31.618219107573307",
+            "longitude": "74.2900244279483",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Shahdara Station",
+            "time":"",
+            "latitude": "31.626960474672984",
+            "longitude": "74.28818717751786",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Matchis Factory",
+            "time":"",
+            "latitude": "31.63821423383863",
+            "longitude": "74.28600934521961",
+            "visibility": "show"
+            
+        },
+        
+        {
+            "name": "Imamiya Colony",
+            "time":"",
+            "latitude": "31.647623084999157",
+            "longitude": "74.28405519019431",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Rachna Town",
+            "time":"",
+            "latitude": "31.658147158050046",
+            "longitude": "74.28185083184795",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Haider Road",
+            "time":"",
+            "latitude": "31.672805956265787",
+            "longitude": "74.2788286790666",
+            "visibility": "show"
+            
+        },
+        {
+            "name": "Rana Town",
+            "time":"",
+            "latitude": "31.685126645639755",
+            "longitude": "74.27609864670777",
+            "visibility": "show"
+            
+        }
+    ],
+    "path":[
+    [74.19597924485699,31.571442238883776]
+    ]    
+}
