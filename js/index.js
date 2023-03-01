@@ -14,12 +14,14 @@ $("#viewRoutes").change(function () {
   removePopups();
   //Verifying and creatingr markers
   let _value = $(this).val();
-  if (_value >= 1 || _value <= 8) {
+  console.log(_value);
+  if (_value >= 1 && _value <= 11) {
     
     buildRoute(_value);
   }
-  else {
-    alert("You Have Selected none")
+  else if(_value!='Selct Route') {
+    console.log(_value);
+    buildRoute(_value);
   }
 });
 
