@@ -1,118 +1,118 @@
 {
     "route": [
         {
-			"name": "uet ksk",
+			"name": "UET KSK",
 			"latitude": 31.692594,
-			"longitude": 74.251977, 
-			"time_of_arrival": "04:06 PM"
+			"longitude":74.251978, 
+			"time": "04:06 PM"
 		},
 		{
 			"name": "Rana Town",
-			"latitude": 31.685459569349383,
-			"longitude": 74.27631316087256,
-			"time_of_arrival": "04:14 PM"
+			"latitude": 31.685569,
+			"longitude":74.276273,
+			"time": "04:14 PM"
 		},
 		{
-			"name": "no 3",
-			"latitude": 31.6599233,
-			"longitude": 74.28116829999999,
-			"time_of_arrival": "04:17 PM"
+			"name": "Rachna Town",
+			"latitude": 31.660012,
+			"longitude":74.281627,
+			"time": "04:17 PM"
 		},
 		{
-			"name": "no. 4",
-			"latitude": 31.6564517,
-			"longitude": 74.2833733,
-			"time_of_arrival": "04:19 PM"
+			"name": "Feroze Wala",
+			"latitude": 31.656099,
+			"longitude":74.282437,
+			"time": "04:19 PM"
 		},
 		{
-			"name": "no.5",
-			"latitude": 31.64791,
-			"longitude": 74.28446830000001,
-			"time_of_arrival": "04:21 PM"
+			"name": "Imamiya Colony",
+			"latitude": 31.647810,
+			"longitude":74.284133,
+			"time": "04:21 PM"
 		},
 		{
-			"name": "no 6",
-			"latitude": 31.6434991,
-			"longitude": 74.2841416,
-			"time_of_arrival": "04:22 PM"
+			"name": "Kala Khatai Road",
+			"latitude": 31.643579,
+			"longitude":74.285045,
+			"time": "04:22 PM"
 		},
 		{
-			"name": "no 7",
-			"latitude": 31.6365167,
-			"longitude": 74.2856917,
-			"time_of_arrival": "04:24 PM"
+			"name": "Matchis Factory",
+			"latitude": 31.637487,
+			"longitude":74.286328,
+			"time": "04:24 PM"
 		},
 		{
 			"name": "no 8",
-			"latitude": 31.63032,
-			"longitude": 74.2854183,
-			"time_of_arrival": "04:25 PM"
+			"latitude": 31.630630,
+			"longitude":74.287786,
+			"time": "04:25 PM"
 		},
 		{
-			"name": "no 10",
-			"latitude": 31.6271517,
-			"longitude": 74.2882467,
-			"time_of_arrival": "04:28 PM"
+			"name": "Shahdara Station",
+			"latitude": 31.627173,
+			"longitude":74.288478,
+			"time": "04:28 PM"
 		},
 		{
-			"name": "no 11",
-			"latitude": 31.6215783,
-			"longitude": 74.2894317,
-			"time_of_arrival": "04:29 PM"
+			"name": "Kot Shahab-ud-Din",
+			"latitude": 31.621612,
+			"longitude":74.289650,
+			"time": "04:29 PM"
 		},
 		{
-			"name": "no 12",
-			"latitude": 31.6161817,
-			"longitude": 74.289165,
-			"time_of_arrival": "04:30 PM"
+			"name": "Shadrah Chowk",
+			"latitude": 31.618084,
+			"longitude":74.289663,
+			"time": "04:30 PM"
 		},
 		{
-			"name": "no 13",
-			"latitude": 31.618244,
-			"longitude": 74.28837190000002,
-			"time_of_arrival": "04:33 PM"
+			"name": "Shadrah Chowk",
+			"latitude": 31.618054,
+			"longitude":74.288392,
+			"time": "04:33 PM"
 		},
 		{
-			"name": "no 14",
-			"latitude": 31.6150817,
-			"longitude": 74.2829567,
-			"time_of_arrival": "04:35 PM"
+			"name": "Jiya Musa",
+			"latitude": 31.617282,
+			"longitude":74.282688,
+			"time": "04:35 PM"
 		},
 		{
-			"name": "no 15",
-			"latitude": 31.6165813,
-			"longitude": 74.2788045,
-			"time_of_arrival": "04:36 PM"
+			"name": "25.no Speedo Bus Stop",
+			"latitude": 31.616559,
+			"longitude":74.278811,
+			"time": "04:36 PM"
 		},
 		{
-			"name": "begum kot",
-			"latitude": 31.6139832,
-			"longitude": 74.2665877,
-			"time_of_arrival": "04:38 PM"
+			"name": "Begum kot",
+			"latitude": 31.614000,
+			"longitude":74.266586,
+			"time": "04:38 PM"
 		},
 		{
-			"name": "nain sukh",
-			"latitude": 31.61038,
-			"longitude": 74.2509517,
-			"time_of_arrival": "04:42 PM"
+			"name": "Nain Sukh",
+			"latitude": 31.610371,
+			"longitude":74.250953,
+			"time": "04:42 PM"
 		},
 		{
-			"name": "green wood city",
-			"latitude": 31.6074092,
-			"longitude": 74.2452408,
-			"time_of_arrival": "04:44 PM"
+			"name": "Green wood city",
+			"latitude": 31.607539,
+			"longitude":74.245148,
+			"time": "04:44 PM"
 		},
 		{
-			"name": "al rehman garden",
-			"latitude": 31.6029047,
-			"longitude": 74.2353521,
-			"time_of_arrival": "04:47 PM"
+			"name": "Al Rehman Garden",
+			"latitude": 31.602820,
+			"longitude":74.235372,
+			"time": "04:47 PM"
 		},
 		{
-			"name": "gate no 2",
-			"latitude": 31.600355,
-			"longitude": 74.230095,
-			"time_of_arrival": "04:49 PM"
+			"name": "Al Rehman Garden Gate No 2",
+			"latitude": 31.600383,
+			"longitude":74.230080,
+			"time": "04:49 PM"
 		}
     ],
     "path":[
@@ -393,6 +393,16 @@
         [74.2367, 31.603164],
         [74.235397, 31.602827],
         [74.235288, 31.602796],
-        [74.235197, 31.602765]
+        [74.235197, 31.602765],
+        [74.234955, 31.602678],
+        [74.234552, 31.602495],
+        [74.233832, 31.602124],
+        [74.233714, 31.602067],
+        [74.233122, 31.60179],
+        [74.231221, 31.600871],
+        [74.230322, 31.600478],
+        [74.23026, 31.600454],
+        [74.230194, 31.600428],
+        [74.23008, 31.600384]
     ]    
 }
